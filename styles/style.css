@@ -10,6 +10,8 @@ body{
     margin: 0;
 }
 
+
+
 /*---------------------- 
        header Styles 
 ------------------------*/
@@ -68,14 +70,13 @@ header .header-banner-image img{
        Player Photo album Styles 
 ---------------------------------------*/
 
-.container{
-    
-}
+
 .player-album{
     display:grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 30px;
     padding:70px 210px 160px 180px;
+    
 }
 .photo-album{
     margin-top: 27px;
@@ -94,3 +95,23 @@ header .header-banner-image img{
     font-size:28px;
     font-weight:700px;
 }
+
+/*--------------------------------------
+       Football News Styles
+---------------------------------------*/
+
+.football-news {
+    display:flex;
+    justify-content: space-between;
+    padding:70px 210px 160px 180px;
+}
+
+.football-news img {
+    width: 567px;
+    height: 427px;
+}
+.news-title h3{
+    font-size:48px;
+    font-weight:700;
+}
+
