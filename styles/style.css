@@ -117,7 +117,83 @@ header .header-banner-image img{
     font-weight:700;
 }
 
+/*--------------------------------------
+       Football Organization styles
+---------------------------------------*/
 
+.football-cup{
+    background-color:rgba(219, 223, 15, 0.13);
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    
+}
+.football-cup h2{
+    font-size:32px;
+    
+    color: tomato;
+    transition: ease-in-out text-decoration 5s;
+    
+}
+.football-cup h2:hover{
+    text-decoration: underline;
+}
+
+
+.football-organization{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    padding:70px 210px 160px 180px;
+}
+.organization-photo img{
+    width:250px;
+    height:150px
+}
+
+.organization-name{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-color:white;
+    padding:10px;
+    box-shadow:0px 0px 5px 2px  grey;
+}
+.organization-name p{
+    text-align:justify;
+}
+
+/*--------------------------------------
+       Team Ranking  styles
+---------------------------------------*/
+.world-ranking h2{
+    text-align:center;
+    font-size:48px;
+    font-weight:700;
+    padding:10px;
+}
+.team-rank table{
+    width: 847px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-rank table tr{
+    
+    text-align:left;
+}
+.team-rank .team-name{
+    display:flex;
+    align-items:center;
+    
+}
+.team-rank img{
+    height:46px;
+    width:70px;
+    margin-right:16px;
+}
+.team-rank table tr td{
+    border-bottom: 1px solid gray;
+}
 /*--------------------------------------
        Footer styles
 ---------------------------------------*/
@@ -126,6 +202,7 @@ footer {
     display:flex;
     flex-direction:column;
     align-items: center;
+    margin-top:27px;
 }
 
 .footer-logo img{
@@ -133,3 +210,90 @@ footer {
     height:110px;
 
 }
+
+.footer-social-icon{
+    color: gray;
+}
+
+.footer-social-icon .fa{
+    margin-right: 16px;
+}
+
+.fa-facebook-official:hover{
+    color:blue;
+}
+.fa-twitter:hover{
+    color:aqua;
+}
+.fa-instagram:hover{
+    color:orangered;
+}
+.fa-google:hover{
+    color:blue;
+}
+
+
+
+/*--------------------------------------
+      Media Query
+---------------------------------------*/
+
+
+/*--------------------------------------
+      Media Device
+---------------------------------------*/
+
+
+@media only screen and (max-width:688px)
+{
+    nav a{
+        width:100%;
+        font-size:12px;
+    }
+
+    header .header-banner-image img{
+        padding-top: 50px;
+        width: 329px;
+        height: 259px;
+    }
+    .header-container{
+        flex-direction: column;
+        justify-content:center;
+        padding: 52px 140px 86px 16px;
+    }
+    .header-container h1{
+        font-size:36px;
+        font-weight:700;
+        transition: color 0.5s ease;
+    }
+
+    .player-album,.football-organization{
+        grid-template-columns: repeat(1,1fr);
+        padding:10px;
+    }
+    .football-news{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .football-news img{
+        width: 328px;
+        height:248px;
+    }
+    .news-title h3{
+        font-size:30px;
+        font-weight:700;
+    }
+    .football-organization{
+        grid-row-gap: 15px;
+    }
+    .team-rank table{
+        width:100%;
+    }
+    footer{
+        width:100%;
+    }
+    
+}
+
+@media only screen and (min-width:688px) and (max-width:992px)
+{}
