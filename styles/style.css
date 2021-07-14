@@ -152,7 +152,10 @@ header .header-banner-image img{
 .football-news {
     display:flex;
     justify-content: space-between;
-    padding:70px 210px 160px 180px;
+    padding:70px 156px 160px 180px;
+}
+.football-news .thumbnail{
+    padding-left: 66px;
 }
 
 .football-news img {
@@ -330,7 +333,7 @@ footer {
         padding: 15px;
     }
     .football-news .thumbnail{
-        padding-top: 15px;
+        padding:10px;
     }
     .news-title h3{
         font-size:30px;
