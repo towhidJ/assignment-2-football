@@ -253,12 +253,14 @@ footer {
 
     header .header-banner-image img{
         padding-top: 50px;
-        width: 300px;
+        padding-left: 150px;
+        width: 329px;
         height: 259px;
     }
     .header-container{
         flex-direction: column;
         justify-content:center;
+        align-items: center;
         padding: 52px 140px 86px 16px;
     }
     .header-container h1{
