@@ -292,6 +292,11 @@ footer {
     footer{
         width:100%;
     }
+    .footer-logo img{
+        width:275px;
+        height:63px;
+    
+    }
     
 }
 
