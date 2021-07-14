@@ -2,7 +2,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Poppins&display=swap');
 
 
-/* common style or utillities */
+
+/*------------------------------------------
+        animation styles
+--------------------------------------------*/
+@keyframes sliding {
+    0%{
+        background-color:orange(235, 218, 188);
+        color:white;
+        
+    }
+
+    
+    100%{
+        background-color:tomato;
+        
+    }
+}
+@keyframes text-sliding {
+    0%{
+        color:white;
+        
+    }
+
+    50%{
+        color:aquamarine;
+        
+    }
+    100%{
+        color:aqua;
+        
+    }
+}
+
+/*----------------------------------
+       common style or utillities
+------------------------------------*/
+
 body{
     /* font-family: 'Hachi Maru Pop', cursive; */
     font-family: 'Poppins', sans-serif;
@@ -28,10 +64,13 @@ header{
 .header-container h1{
     font-size:64px;
     font-weight:700;
-    transition: color 0.5s ease;
+    /* transition: color 0.5s ease; */
 }
 .header-container h1:hover{
-    color: aqua;
+    /* color: aqua; */
+    position: relative;
+    animation: text-sliding 1s ease-in-out 0.2s infinite alternate;
+    animation-play-state: running;
 }
 /*---------------------- 
        nav Styles 
@@ -63,7 +102,15 @@ header .header-banner-image img{
     background-color:#E02C6D;
     color:white;
     padding:10px 15px;
+    
 
+}
+
+.link-button:hover{
+    position: relative;
+    animation: sliding 1s ease-in-out 0.2s infinite alternate;
+    animation-play-state: running;
+    background-color:darkcyan;
 }
 
 /*--------------------------------------
