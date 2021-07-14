@@ -246,10 +246,10 @@ footer {
 
 @media only screen and (max-width:688px)
 {
-    nav a{
-        width:100%;
-        font-size:5px;
+    nav .menu{
+        display:none;
     }
+   
 
     header .header-banner-image img{
         padding-top: 50px;
@@ -278,8 +278,12 @@ footer {
         flex-direction: column;
     }
     .football-news img{
-        width: 328px;
-        height:248px;
+        width: 300px;
+        height:200px;
+        padding: 15px;
+    }
+    .football-news .thumbnail{
+        padding-top: 15px;
     }
     .news-title h3{
         font-size:30px;
@@ -308,11 +312,18 @@ footer {
         height:63px;
     
     }
+
+    
+
+   
     
 }
 
 @media only screen and (min-width:688px) and (max-width:992px)
 {
+    nav .menu{
+        display:none;
+    }
     .header-container{
         flex-direction: column;
         justify-content:center;
@@ -332,7 +343,7 @@ footer {
     }
     .player-album,.football-organization{
         grid-template-columns: repeat(2,1fr);
-        padding:10px;
+        padding:16px;
     }
     .football-organization{
         grid-row-gap: 15px;
@@ -341,9 +352,14 @@ footer {
         padding: 27px;
         
     }
+    .football-news .thumbnail{
+        padding-left: 15px;
+    }
+    
     .football-news img{
-        width: 300px;
+        width: 280px;
         height:200px;
+
     }
     .news-title h3{
         font-size:24px;
